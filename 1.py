@@ -1,10 +1,12 @@
 #Answer 1
 
 tup=()
+list=[]
 pos,neg,odd,even,zero=0,0,0,0,0
 for i in range(20):
 	i=int(input("Enter an element"))
-	tup.append(i)
+	list.append(i)
+tup=tuple(list)	
 for element in tup:
 	if element>0:
 		pos=pos+1;
